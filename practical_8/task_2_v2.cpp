@@ -10,5 +10,3 @@ int main()
 	cout<<*p<<endl;
 	return 0;
 }
-© 2021 GitHub, Inc.
-Terms
