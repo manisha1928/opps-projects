@@ -1,16 +1,24 @@
 #include<iostream>
 using namespace std;
- namespace first
- namespace second
- {
-  void say_something()
-   {
-    cout<<"hello programmers ";
-    }
- }
- 
+namespace first
+{
+    int sum(int a,int b)
+         {return a+b;}
+}
+namespace second
+{
+     float sum(float a,float b)
+          {return a+b;}
+}
+using namespace first;
+using namespace second;
 int main()
 {
- first::say_something();
- return 0;
-}
+     int integer=0;
+     integer=sum(3,4);
+    float floatnum=0;
+    floatnum=sum(2.0,5.4);
+    cout<<"Sum of integers: "<<integer<<"\n";
+    cout<<"Sum of float: "<<floatnum<<"\n";
+    
+    return 0;
