@@ -25,7 +25,7 @@ int main()
 {
   College C1;
   Student S1;
-  S1.name="Rahul";
+  S1.name="Manisha";
   S1.roll=43;
   C1.set_College("ABCD",1234);
   C1.disp();
