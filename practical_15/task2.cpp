@@ -23,7 +23,7 @@ int main()
 		cout<<"Can't open file."<<endl;
 	else
 	{
-		fout<<"Rahul Arya.\n";
+		fout<<"Manisha basera.\n";
 		fout.close();
 	}
 
