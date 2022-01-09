@@ -24,7 +24,7 @@ int main()
     getline(r>>ws,line);
     cout<<line<<'\n';
 
-    cout<<setw(10)<<"Rahul"<<'\n';
+    cout<<setw(10)<<"Manisha"<<'\n';
     cout<<setprecision(5)<<12.2323435553<<'\n';
 
     cout<<"world"<<endl;
