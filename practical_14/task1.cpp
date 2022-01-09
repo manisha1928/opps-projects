@@ -1,32 +1,37 @@
 
-/*Version 1: without Using "using keyword" 
- 2. The function not visible to child class
-    are both add function of Base Class*/
 #include<iostream>
 using namespace std;
 class Base 
 {
     public: 
+    
     int add(int a,int b)
     {
         return(a+b);
     } 
-    float add(float a,float b)
+    virtual float add(float a,float b)
     {
         return(a+b);
-    } 
+    }  
+    
 }; 
 class child:public Base{
     public: 
     int add(int a,int b)
     {
         return(a+b+1);
-    }
+    } 
+    float add(float a,float b)
+    {
+        return(a+b+1);
+    }  
 }; 
 int main()
-{
+{ 
+    Base *b;
     child c;
-    cout<<c.add(2,3)<<endl;
-    cout<<c.add(2.1,3.1)<<endl; 
+    b=&c;
+    cout<<b->add(2,3)<<endl;//Compile-Time Binding
+    cout<<b->add(1.1f,2.1f)<<endl; //Dynamic Binding
     return 0;
 }
